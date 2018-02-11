@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_padrao"
+    android:background="@color/white"
+    tools:context="com.fabriciohsilva.silverwolfwebsolutions.EmpresaActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/listView2"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/detalhe_empresa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="@string/sobre_a_empresa"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <ScrollView
+        android:id="@+id/listView2"
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:background="@color/FiftyShadesof"
+        android:padding="@dimen/padding_padrao"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="@string/desc_empresa"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>
